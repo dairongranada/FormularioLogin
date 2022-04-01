@@ -9,26 +9,14 @@ body{
 }
 
 
-footer{
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: white;
-}
 
-footer h1{
-    margin : 15px;
-    font-size: 12px;
-    color: darkgrey;
-    text-align: center;
-}
 
-/*-------------------    Estos 2 STYLOS son importantes   ---------------------------------------------*/
 .login{
-    width: 420px;
-    height: 420px;
+    box-shadow: 10px 1px 50px #fff;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 30%;
+    height: 480px;
     background: black;
     color: white;  /** Color del texto **/
     top: 50%;
@@ -38,20 +26,38 @@ footer h1{
     box-sizing: border-box;
     padding: 70px 30px;
     font-size: 15px;
-
 }
 
-.login .img{
+
+
+.bodyLogin{
+    margin : 0;
+    padding : 0;
+    background : url(../images/fondo.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+
+
+
+
+
+.login img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     position: absolute;
     top: -50px; 
     left: calc(50% - 50px); /*aca se resta 50% menos os 50px del top para centrarla en el div */
-
 }
 
-/*----------------------------------------------------------------*/
+.login img:hover{
+    box-shadow: 0 0 20px white;
+}
+
+
 .login h1{
     margin: 0;
     padding: 0 0 20px;
@@ -63,6 +69,7 @@ footer h1{
     margin: 0;
     padding: 0;
     display: block;
+    padding: 11px 0 8px;
 }
 
 
@@ -81,6 +88,7 @@ footer h1{
     outline: none;
     height: 40px;
     color: #fff;
+    
 
 }
 
@@ -92,12 +100,32 @@ footer h1{
     font-size: 18px;
     border-radius: 15px;
     color: #fff;
-
+    margin-top: 4%;
 }
+
+
+.login input[type="submit"]:hover { 
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+
 
 .login a{
     text-decoration: none;
     line-height: 20px;
     color: darkgrey; 
     font-size: 15px;
+    margin-left: 14px;
+}
+
+
+
+.ContenedoresDeLogin a:hover{
+    color: aqua;
+}
+
+
+.ContenedoresDeLogin{
+    display: flex;
+    justify-content: space-evenly;
 }
